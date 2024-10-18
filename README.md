@@ -1,3 +1,4 @@
-# Python_automation
+## Python_automation
 
-** Project00 has basic selenium setup **
+- **Project00**: Basic selenium setup.
+- **Project01**: Login automation.

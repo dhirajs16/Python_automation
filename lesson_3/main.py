@@ -28,10 +28,46 @@ Usage: When you need to deserialize JSON data from a file to a Python object.
 '''
 
 
+'''Accesing Data get request'''
+# import requests
+# URL = ''
+# req = requests.get(url=URL)
+# content = req.json()
+# print(content['message'])
 
+
+
+'''How to use json methods (dumps & loads)'''
+# from json import dumps, loads
+
+# json_string = '{"name":"Shyam", "course":"B.Tech"}'
+# print("json_str:", json_string)
+# print("json_str type:", type(json_string))
+
+# print('===============================')
+# jstd = loads(json_string)
+# print("jstd type",type(jstd))
+# print("jstd=",jstd)
+
+# print('===============================')
+# dtjs = dumps(jstd)
+# print("dtjs type", type(dtjs))
+
+
+'''request.post() method'''
 import requests
-URL = ''
-req = requests.get(url=URL)
-content = req.json()
-print(content['message'])
 
+URL = 'https://api.languagetoolplus.com/v2/check'
+
+data = {
+    'text': 'Ths iz eazy!',
+    'language': 'en-US'
+}
+
+response = requests.post(url=URL, data=data)
+content = response.json()
+
+
+print('response type:', type(response))
+print('content type:', type(content))
+print(content)

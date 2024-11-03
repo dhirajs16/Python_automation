@@ -2,7 +2,7 @@
 
 - **Lesson 1**: Basic selenium setup.
 - **Lesson 2**: Login automation.
-- **Lesson 3**: API accessing and API building.
+- **Lesson 3**: API accessing with request lib, Difference in json(), json.dumps() and json.loads(), requests lib post operation.
 
 <hr>
 

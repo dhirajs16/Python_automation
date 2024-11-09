@@ -2,11 +2,14 @@
 
 - **Lesson 1**: Basic selenium setup.
 - **Lesson 2**: Login automation.
-- **Lesson 3**: API accessing with request lib, Difference in json(), json.dumps() and json.loads(), requests lib post operation.
+- **Lesson 3**: API accessing with request lib, Difference in `json()`, `json.dumps()` and `json.loads()`, requests lib post operation.
+- **Lesson 4**: automate sending gamils with `yagmail`
 
 <hr>
 
-## **API Accessing : Brief on json module methods**
+## **Lesson 3**
+
+### **API Accessing : Brief on json module methods**
 
 `json()` method and the json module's `.dumps()` and `.loads()` functions serve different purposes. Let’s break it down:
 
@@ -18,9 +21,7 @@ Usage: When you make an HTTP request using the requests library in Python, and t
 
 Example:
 
-python
-
-```
+```python
 import requests
 
 response = requests.get('https://api.example.com/data')
@@ -37,9 +38,7 @@ Usage: When you have a JSON formatted string and need to work with it as a Pytho
 
 Example:
 
-python
-
-```
+```python
 import json
 
 json_str = '{"name": "John", "age": 30}'
@@ -73,3 +72,23 @@ print(json_str)
 `json.loads()`: Converts a JSON string to a Python dictionary.
 
 `json.dumps()`: Converts a Python dictionary to a JSON string.
+
+<hr>
+
+## **Lesson 4**
+
+- To hide sender and receiver emails use `config()` method of `python-decouple` package with a `.env` file.
+
+```python
+
+pip install python-decouple
+
+```
+
+- `yagmail` is a GMAIL/SMTP client that aims to make it as simple as possible to send emails.
+
+```python
+
+pip install yagmail
+
+```

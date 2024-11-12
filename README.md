@@ -4,8 +4,11 @@
 - **Lesson 2**: Login automation.
 - **Lesson 3**: API accessing with request lib, Difference in `json()`, `json.dumps()` and `json.loads()`, requests lib post operation.
 - **Lesson 4**: automate sending gamils with `yagmail`, extracting data from pdf
+- **Lesson 5**: streamlit & flask
+
 
 <hr>
+
 
 ## **Lesson 3**
 
@@ -77,7 +80,7 @@ print(json_str)
 
 ## **Lesson 4**
 
-- To hide sender and receiver emails use `config()` method of `python-decouple` package with a `.env` file.
+To hide sender and receiver emails use `config()` method of `python-decouple` package with a `.env` file.
 
 ```python
 
@@ -85,17 +88,37 @@ pip install python-decouple
 
 ```
 
-- `yagmail` is a GMAIL/SMTP client that aims to make it as simple as possible to send emails.
+`yagmail` is a GMAIL/SMTP client that aims to make it as simple as possible to send emails.
 
 ```python
 
 pip install yagmail
 
 ```
-- `fpdf` and `PyMuPDF` packages are used for creating pdf and extracting data from pdf respectively.
+`fpdf` and `PyMuPDF` packages are used for creating pdf and extracting data from pdf respectively.
 
 ```python
 pip install fpdf
 
 pip install PyMuPDF
+```
+
+<hr>
+
+## **Lesson 5**
+
+Install `streamlit` package.
+
+```python
+
+pip install streamlit 
+
+```
+
+To run the program.
+
+```bash
+
+streamlit run main.py
+
 ```
